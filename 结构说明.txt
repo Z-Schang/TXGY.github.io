@@ -1,95 +1,50 @@
 
-ÎÄ¼þ½á¹¹£º
+æ–‡ä»¶ç»“æž„ï¼š
 
-	fileÎÄ¼þ¼Ð		      ´æ·ÅÓ°ÆµÎÄ¼þ
-	index.html	       ÍøÒ³Ö÷ÎÄ¼þ
-	cssÎÄ¼þ¼Ð  
-	       |--  font	       ×ÖÌåÎÄ¼þÎÄ¼þ¼Ð
-	       |--  lbt-style.css        ÂÖ²¥Í¼²å¼þÑùÊ½
-	       |--  sc_global.css      È«¾ÖÑùÊ½£¨×ÖÌåÒýÈë£¬CSSrest£¬Ö÷ÄÚÈÝÇøÍ¨ÓÃÈÝÆ÷wrap£¬Ò³ÖÐ¸´ÓÃÑùÊ½...£©
-	       |--  sc_index.css       Ö÷Ò³¸÷°å¿éÑùÊ½£¨ÓÉÖ÷Ò³¶¥²¿µ½µÍ²¿£¬·Ö¿éµÄÍâ²¿µ½ÄÚ²¿£¬¿éÄÚµÄ×óµ½ÓÒµÄË³ÐòÉèÖÃ£©
+	fileæ–‡ä»¶å¤¹		      å­˜æ”¾å½±é¢‘æ–‡ä»¶
+	index.html	       ç½‘é¡µä¸»æ–‡ä»¶
+	cssæ–‡ä»¶å¤¹  
+	       |--  font	       å­—ä½“æ–‡ä»¶æ–‡ä»¶å¤¹
+	       |--  lbt-style.css        è½®æ’­å›¾æ’ä»¶æ ·å¼
+	       |--  sc_global.css      å…¨å±€æ ·å¼ï¼ˆå­—ä½“å¼•å…¥ï¼ŒCSSrestï¼Œä¸»å†…å®¹åŒºé€šç”¨å®¹å™¨wrapï¼Œé¡µä¸­å¤ç”¨æ ·å¼...ï¼‰
+	       |--  sc_index.css       ä¸»é¡µå„æ¿å—æ ·å¼ï¼ˆç”±ä¸»é¡µé¡¶éƒ¨åˆ°ä½Žéƒ¨ï¼Œåˆ†å—çš„å¤–éƒ¨åˆ°å†…éƒ¨ï¼Œå—å†…çš„å·¦åˆ°å³çš„é¡ºåºè®¾ç½®ï¼‰
 
-	jsÎÄ¼þ¼Ð
-	       |--  jquery.js	        jQueryÔ´ÎÄ¼þ
-	       |--  dataTran.js	       Ä£Äâ´«ÈëjsonÐÍÊý¾Ý£¬ÓÃÊý¾ÝäÖÈ¾Ò³Ãæ(Ò»²¿·Ö)
-	       |--  lbt-extend.js       ÂÖ²¥Í¼·â×°(Ê¹ÓÃjQuery)µÄ²å¼þ
-	       |--  index.js	       Ö÷Ò³µÄÊÂ¼þ´¦Àí£¨ÓÉÖ÷Ò³¶¥µ½µ×ÒÀ´ÎÉèÖÃ£©
+	jsæ–‡ä»¶å¤¹
+	       |--  jquery.js	        jQueryæºæ–‡ä»¶
+	       |--  dataTran.js	       æ¨¡æ‹Ÿä¼ å…¥jsonåž‹æ•°æ®ï¼Œç”¨æ•°æ®æ¸²æŸ“é¡µé¢(ä¸€éƒ¨åˆ†)
+	       |--  lbt-extend.js       è½®æ’­å›¾å°è£…(ä½¿ç”¨jQuery)çš„æ’ä»¶
+	       |--  index.js	       ä¸»é¡µçš„äº‹ä»¶å¤„ç†ï¼ˆç”±ä¸»é¡µé¡¶åˆ°åº•ä¾æ¬¡è®¾ç½®ï¼‰
 
-	imagesÎÄ¼þ¼Ð
-	       |--  logo.png	       Ö÷Ò³logo
-	       |--  topBanner          ¶¥²¿°àÄÉÍ¼Æ¬ÎÄ¼þ¼Ð
-	       |--  itemBox	       ÈÈÃÅÏîÄ¿Í¼Æ¬ÎÄ¼þ¼Ð
-	       |--  starSupport       ÈÙÒ«Ã÷ÐÇÍ¼Æ¬ÎÄ¼þ¼Ð
-	       |--  EnterInit	       ÈÈÐÄÆóÒµÍ¼Æ¬ÎÄ¼þ¼Ð
-	       |--  specialThanks    ÌØ±ðÃùÐ»Í¼Æ¬ÎÄ¼þ¼Ð
-	       |--  collPro	       ºÏ×÷²úÆ·Í¼Æ¬ÎÄ¼þ¼Ð
+	imagesæ–‡ä»¶å¤¹
+	       |--  logo.png	       ä¸»é¡µlogo
+	       |--  topBanner          é¡¶éƒ¨ç­çº³å›¾ç‰‡æ–‡ä»¶å¤¹
+	       |--  itemBox	       çƒ­é—¨é¡¹ç›®å›¾ç‰‡æ–‡ä»¶å¤¹
+	       |--  starSupport       è£è€€æ˜Žæ˜Ÿå›¾ç‰‡æ–‡ä»¶å¤¹
+	       |--  EnterInit	       çƒ­å¿ƒä¼ä¸šå›¾ç‰‡æ–‡ä»¶å¤¹
+	       |--  specialThanks    ç‰¹åˆ«é¸£è°¢å›¾ç‰‡æ–‡ä»¶å¤¹
+	       |--  collPro	       åˆä½œäº§å“å›¾ç‰‡æ–‡ä»¶å¤¹
 
 
 
-ÍøÒ³htmlÖ÷½á¹¹£º
+ç½‘é¡µhtmlä¸»ç»“æž„ï¼š
 
           <body>
-	<div class="signIn">		       µÇÂ¼Ò³
-	<nav>...</nav>			       µ¼º½£¬fixed¶¨Î»¹Ì¶¨ÔÚÒ³Ãæ¶¥¶Ë
-	<div class="wrap">	     		       ¹Ì¶¨¿í¶ÈµÄ¾ÓÖÐ¿é£¬°ü¹üÀïÃæÄÚÈÝ£¬ÏÞÖÆÀïÃæ¿éµÄ×î´ó¿í¶È
-     	     <div class="topBanner">...</div>	       ¶¥²¿°àÄÉÍ¼ÎÄ£¬¹Ì¶¨¸ß¶È£¬Ê¹ÓÃ¾ø¶Ô¶¨Î»Ê¹ÍÑÀëÁ÷Ê¹³äÂúÕû¸öÆÁÄ»¿í£¬¸ß¶È¹Ì¶¨
-     	     <article>			       Ö÷Ò³ÄÚÈÝ°å¿é¼¯ÖÐºÐ×Ó
-          	          <div class="itemBox">...</div>  	       "ÈÈÃÅÏîÄ¿" °å¿é£¬¹Ì¶¨¸ß¶È£¬Ê¹ÓÃ¾ø¶Ô¶¨Î»ÍÑÀëÁ÷£¬ÒÔÉèÖÃÆÁÄ»¿í±³¾°É«
-          	          <div class="starSupport">...</div>     "ÈÙÒ«Ã÷ÐÇ" °å¿é£¬Àï¿éÖ÷Òª²ÉÓÃµ¯ÐÔºÐ×Ó²¼¾Ö
-          	          <div class="EnterInit">...</div>	       "ÆóÒµ³«Òé" °å¿é£¬ÂÖ²¥Í¼¹«Ë¾±êÓïÕ¹Ê¾
-          	          <div class="specialThanks">...</div>  "ÌØ±ðÃùÐ»" °å¿é£¬·ÖÉÏÏÂÁ½¸öÕ¹Ê¾ºÐ×Ó
+	<div class="signIn">		       ç™»å½•é¡µ
+	<nav>...</nav>			       å¯¼èˆªï¼Œfixedå®šä½å›ºå®šåœ¨é¡µé¢é¡¶ç«¯
+	<div class="wrap">	     		       å›ºå®šå®½åº¦çš„å±…ä¸­å—ï¼ŒåŒ…è£¹é‡Œé¢å†…å®¹ï¼Œé™åˆ¶é‡Œé¢å—çš„æœ€å¤§å®½åº¦
+     	     <div class="topBanner">...</div>	       é¡¶éƒ¨ç­çº³å›¾æ–‡ï¼Œå›ºå®šé«˜åº¦ï¼Œä½¿ç”¨ç»å¯¹å®šä½ä½¿è„±ç¦»æµä½¿å……æ»¡æ•´ä¸ªå±å¹•å®½ï¼Œé«˜åº¦å›ºå®š
+     	     <article>			       ä¸»é¡µå†…å®¹æ¿å—é›†ä¸­ç›’å­
+          	          <div class="itemBox">...</div>  	       "çƒ­é—¨é¡¹ç›®" æ¿å—ï¼Œå›ºå®šé«˜åº¦ï¼Œä½¿ç”¨ç»å¯¹å®šä½è„±ç¦»æµï¼Œä»¥è®¾ç½®å±å¹•å®½èƒŒæ™¯è‰²
+          	          <div class="starSupport">...</div>     "è£è€€æ˜Žæ˜Ÿ" æ¿å—ï¼Œé‡Œå—ä¸»è¦é‡‡ç”¨å¼¹æ€§ç›’å­å¸ƒå±€
+          	          <div class="EnterInit">...</div>	       "ä¼ä¸šå€¡è®®" æ¿å—ï¼Œè½®æ’­å›¾å…¬å¸æ ‡è¯­å±•ç¤º
+          	          <div class="specialThanks">...</div>  "ç‰¹åˆ«é¸£è°¢" æ¿å—ï¼Œåˆ†ä¸Šä¸‹ä¸¤ä¸ªå±•ç¤ºç›’å­
      	     </article>
 	</div>
-	<div class="collPro">		        "ºÏ×÷²úÆ·" °å¿é + Ò³½Å
-     	     <div class="wrap">...</wrap>	        ÏÞ¿í°ü¹ü"ºÏ×÷²úÆ·" °å¿é
-     	      <footer>...</footer>		        Ò³½Å
+	<div class="collPro">		        "åˆä½œäº§å“" æ¿å— + é¡µè„š
+     	     <div class="wrap">...</wrap>	        é™å®½åŒ…è£¹"åˆä½œäº§å“" æ¿å—
+     	      <footer>...</footer>		        é¡µè„š
 	</div>
-	<div class="floatBoard">...</div>	        ÓÒÏÂ½Ç¸¡À¸
-	<audio loop class="playMusic">..</audio>   ÒôÆµ²¥·ÅÆ÷ ( Òþ²Ø )
+	<div class="floatBoard">...</div>	        å³ä¸‹è§’æµ®æ 
+	<audio loop class="playMusic">..</audio>   éŸ³é¢‘æ’­æ”¾å™¨ ( éšè— )
          <body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Òþ²ØµÄÒ»·âÐÅ...
-
-.------------------------------------------------------------------------------------------------------------------------------¡¢
-|												|
-|	×ð¾´µÄÃæÊÔ¹Ù£º										|
-|												|
-|	      ÄúºÃ£¡										|
-|	      Ê×ÏÈ¸ÐÐ»Äú¸øÁËÎÒ´Ë´Î±ÊÊÔµÄ»ú»á£¬ÈÃÎÒ¼ìÑé×Ô¼ºÄ¿Ç°µÄÑ§Ï°³É¹û£¬ÎÂÏ°Ö®Ç°ËùÑ§Ç°¶ËÖªÊ¶¡£			|
-|	      ÍøÒ³ÖØ¹¹»¹Ô­£¬Ò»¿ªÊ¼ÎÒÒÔÎªÊÇÖ±½Ó°´Éè¼ÆÍ¼×ö³öÀ´¾Í¿ÉÒÔ£¬µ«ÊÇ×ÐÏ¸ÏëÏë£¬²»¿ÉÄÜÕâÃ´¼òµ¥°¡... ÓÚÊÇ·¢»ÓÁË	|
-|	×Ô¼ºµÄÏëÏóÁ¦¶ÔÍøÒ³½øÐÐÁË²¿·ÖÖØ¹¹£¬Ð´³öÁË´ËÍøÒ³¡£ÓÉÓÚÖªÊ¶ÓÐÏÞ£¬ÍøÒ³²»×ãÖ®´¦£¬»¹Íû¸ßÊ¦Ö¸µã¡£		|
-|	      ±¾ÈË½Ó´¥Ç°¶Ë¼¼Êõµ½ÏÖÔÚÁ½ÄêÁË¡£ÕâÒ»Â·×ßÀ´£¬·¢ÏÖÇ°¶ËÈëÃÅËäÈÝÒ×£¬µ«Òª×öµÃºÃ£¬²»µ«ÐèÒª³ÖÖ®ÒÔºãµÄÐÄÌ¬£¬	|
-|	»¹ÐèÒªºÜ¶àÖªÊ¶»ýÀÛºÍ¶¯ÊÖÊµ¼ùµÄ£¬ÎÒÉîÖª¼¼ÊõÑ§ÎÞÖ¹¾³£¬×Ô¼ºÄ¿Ç°µÄ¼¼ÊõºÍÀíÂÛ»¹ÓÐºÜ´óµÄÑ§Ï°¿Õ¼ä£¬Ë¿ºÁ²»¸Ò	|
-|	Ð¸µ¡¡£Ä¿Ç°ÔÚ¶Á´óÈý£¬ÕýÔÚÉîÈëÑ§Ï° CSS3 ºÍ VUE µÄÏà¹ØÖªÊ¶ ¡£					|
-|	      ºÜ¿ÊÍûÊîÆÚÄÜÓÐ»ú»á½øÈëÌÚÑ¶Õâ¸ö³äÂú¼¼Êõ´óÅ£µÄ¼ÒÍ¥ÀïÑ§Ï°¹¤×÷£¬ÏòÓÅÐãµÄÈËÑ§Ï°£¬Ìá¸ß×Ô¼ºµÄ¼¼Êõ£¬·á¸»×Ô	|
-|	¼ºµÄË¼Ïë£¬ÊµÏÖ×ÔÉíµÄ¼ÛÖµ¡£									|
-|	      ÌÈÈô×ÔÉíÄÜÁ¦ÉÐÎ´Âú×ãÒªÇó£¬ÎÒ»á¸ü¼ÓÅ¬Á¦Ñ§Ï°£¬ºñ»ý±¡·¢£¬ÕùÈ¡³ÉÎªÓÅÐãµÄÇ°¶Ë¹¤³ÌÊ¦¡£			|
-|												|
-|										              ÕÅÊé³©	|
-|										         2019.3.17	|
-*------------------------------------------------------------------------------------------------------------------------------*
-
 
