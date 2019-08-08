@@ -1,0 +1,604 @@
+
+/*顶部导航*/
+nav{
+	position:fixed;
+	top:0;
+	left:0;
+	width:100%;
+	z-index:100;
+	height:3rem;
+	background-color:#fff;
+	box-shadow:2px 0 1px 2px rgba(0,0,0,0.1)
+}
+nav h1{
+	text-indent:-9999px;
+	width:6rem;
+	height:2.3rem;
+	background-image:url('../images/logo.jpg');
+	background-size:cover;
+	margin-top:0.35rem;
+	margin-left:0;
+	display:inline-block;
+	cursor:pointer;
+}
+nav ul{
+	float:right;
+}
+nav ul li{
+	float:left;
+}
+nav ul li a{
+	display:inline-block;
+	width:5rem;
+	height:2rem;
+	line-height:2rem;
+	margin-left:3rem;
+	margin-top:0.5rem;
+	color:#c52428;
+	text-align:center;
+	border-radius:10px;
+	transition:all .1s linear;
+}
+nav ul li a:hover{
+	color:#fff;
+	background-color:#c52428;
+}
+
+
+
+
+/*顶部班纳信息图*/
+.topBanner{
+	position:absolute;
+	top:0;left:0;
+	width:100%;
+	height:48.5rem;
+	background-image:url('../images/topBanner/banner.jpg');
+	background-position:center;
+	background-repeat:no-repeat;
+	text-align:center;
+	padding-bottom:2.8rem;
+}
+.topBanner .mask{
+	position:absolute;
+	color:#fff;
+	width:100%;
+	height:51.3rem;
+	background-color:rgba(0,0,0,0.5);
+	background-repeat:no-repeat;
+	background-size:cover;
+	transition:all 1s linear;
+}
+.topBanner .mask.univer{
+	background-image:url('../images/topBanner/banner2.jpg');
+}
+span.littleStar{
+    width: 30px;
+    height: 30px;
+    background: url("../images/topBanner/star.png") no-repeat;
+    position: absolute;
+    background-size:100% 100%;
+    animation: flash 1s alternate infinite;
+}
+@keyframes flash {
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+span.littleStar:hover{
+    transform: scale(3, 3) rotate(180deg) !important;
+    transition: all 1s;
+}
+.topBanner h2{
+	font-size:3.8rem;
+	line-height: 4.2rem;
+	color:#fff;
+	font-family:'PFSC_R';
+	margin-top:10.5rem;
+	font-weight:normal;
+	cursor:default;
+}
+.topBanner .videoPlay{
+	display:inline-block;
+	width:6rem;
+	height:6rem;
+	margin-top:2.9rem;
+	margin-bottom:2.9rem;
+	cursor:pointer;
+}
+.topBanner .videoPlay img{
+	width:6rem;
+	height:6rem;
+	border-radius:50%;
+	transform-origin:center;
+	transition: all .5s;
+}
+.topBanner .videoPlay img:hover{
+	
+	transform: scale(1.1, 1.1);
+	box-shadow:0px 0 1px 3px rgb(153,204,51);
+}
+.topBanner .videoPlay img.active2{
+	animation:rotate 7s linear infinite;
+}
+@keyframes rotate{
+	0%{
+		transform:rotateZ(0deg);
+		box-shadow:0px 0 1px 3px rgb(153,204,51);
+	}	
+	100%{
+		transform:rotateZ(360deg);
+		box-shadow:0px 0 1px 3px rgb(153,204,51);
+	}
+}
+.topBanner .messBox{
+	font-size:1.3rem;
+	margin:0 auto;
+	cursor:default;
+	display:none;
+}
+.topBanner .messBox.active3{
+	display:block
+}
+.topBanner .mess{
+	font-size:1.3rem;
+}
+.topBanner .mess span{
+	color:skyblue;
+	font-weight:bold;
+}
+.topBanner .mess::after,
+.topBanner .situation::after{
+	display:block;
+	content:'';
+	height:2px;
+	width:31.9rem;
+	background-color:rgba(255,255,255,0.3);
+	margin:0.9rem auto;
+}
+.topBanner .mess:nth-of-type(3)::after
+{
+	width:25.9rem;
+}
+.topBanner .situation{
+	margin-top:1.4rem;
+	cursor:default;
+}
+.topBanner .situation::after{
+	margin:0 auto;
+	width:25.9rem;
+	margin-top:1rem;
+}
+.topBanner .donationBox{
+	display:inline-block;
+	padding:0 1.7rem;
+	position:relative;
+}
+.topBanner .donationBox span.bF{
+	font-family:'netto';
+	font-size:2.5rem;
+}
+.topBanner .donationP::after{
+	display:inline-block;
+	content:'';
+	width:1px;
+	height:2.6rem;
+	position:absolute;
+	bottom:1.1rem;
+	right:0rem;
+	background-color:rgba(255,255,255,0.3)
+}
+.topBanner .donationP:hover span,
+.topBanner .donationT:hover span
+{
+	color:rgb(233,240,29);
+}
+
+
+
+
+/*热门项目*/
+.itemBox{
+	position:absolute;
+	left:0;
+	width:100%;
+	height:55.1rem;
+	background-color:#f9fafb;
+}
+.itemBox .itemView{
+	height:32.5rem;
+	position:relative;
+}
+.itemBox .itemView .loveBox{
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	display:flex;
+	justify-content:space-between;
+}
+.itemBox .itemView .loveBox .lBinner{
+	width:24.3rem;
+	overflow:hidden;
+	height:100%;
+	background-color: #ffffff;
+	box-sizing:border-box;
+	border: solid 0.1rem #f2f3f4;
+	position:relative;
+	border-radius:1rem;
+}
+.itemView .loveBox .lBinner .imgBox{
+	height:17.6rem;
+	opacity:0.9;
+	transition:all .5s linear;
+	overflow:hidden;
+}
+
+.itemView .loveBox .lBinner .imgBox img{
+	height:100%;
+	transition:all .5s linear;
+}
+.itemView .loveBox .lBinner .PBItem{
+	padding-top:30px;
+	padding-left:27px;
+}
+.itemView .loveBox .lBinner .PBItem h3{
+	font-size:1.5rem;
+	font-family:'PFSC_R';
+	margin-bottom:1.5rem;
+	cursor:pointer;
+}
+.itemView .loveBox .lBinner .PBItem h3:hover{
+	color:#c52428;
+}
+.itemView .loveBox .lBinner .PBItem p{
+	line-height:1.8rem;
+	color:rgba(51,51,51,0.8);
+	cursor:default;
+}
+.itemView .loveBox .lBinner .PBItem p.scan{
+	text-align:center;
+}
+.itemView .loveBox .lBinner .PBItem span{
+	font-size:0.9rem;
+}
+.loveBox .lBinner .PBItem .hoverBox{
+	display:none;
+	background-color:rgba(0,0,0,0.7);
+	position:absolute;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+}
+.loveBox .lBinner .PBItem .hoverBox p{
+	color:rgba(255,255,255,0.8);
+}
+.loveBox .lBinner .PBItem .hoverBox p.msg{
+	width:20.7rem;
+	height:10.2rem;
+	margin:5.2rem auto;
+	margin-bottom:3.7rem;
+	line-height:1.8rem;
+	transition: all .3s;
+}
+.loveBox .lBinner .PBItem .hoverBox p.msg:hover{
+	color:rgba(255,255,255,1);
+}
+.loveBox .lBinner .PBItem .hoverBox img{
+	display:inline-block;
+	border:0.2rem solid #fff;
+	margin-left:50%;
+	transform:translateX(-50%);
+	margin-bottom:1rem;
+}
+.itemBox .itemView .toPrev{
+	background-image:url('../images/itemBox/prev.png');	
+	top:45%;
+	left:-3rem;
+}
+.itemBox .itemView .toNext{
+	background-image:url('../images/itemBox/next.png');	
+	top:45%;
+	right:-3rem;
+}
+.itemBox .wrap .searchAll{
+	display:block;
+	margin:3.4rem auto;
+	width:12.4rem;
+	height:3.2rem;
+	line-height:3.2rem;
+	border-radius:1.6rem;
+	background-color: #b30001;
+	color:rgba(255,255,255,0.8);
+	text-align:center;
+	font-family:'MicrosoftYaHei'
+}
+.itemBox .wrap .searchAll:hover{
+	color:rgba(255,255,255,1);
+}
+.itemBox .itemView .loveBox.part1{
+	z-index:10;
+}
+
+
+
+
+/*明星支持*/
+article .starSupport{
+	margin-top:55.1rem;
+	width:100%;
+}
+.starSupport .starBox{
+	width:100%;
+	display:flex;
+	justify-content:space-between;
+}
+.starSupport .starBox .star{
+	width:14rem;
+	text-align:center;
+	color:#262626;
+	position:relative;
+}
+.starSupport .starBox .star .starPic,
+.starBox .star .hover-star{
+	width:11.3rem;
+	height:11.3rem;
+	border-radius:50%;
+	margin:0 auto;
+	overflow:hidden;
+}
+.starSupport .starBox .star .starPic{
+	transition:all 0.5s linear;
+}
+.starSupport .starBox .star .starPic img{
+	height:100%;
+	margin-left:-30px;
+	cursor:pointer;
+}
+.starSupport .starBox .star h3{
+	margin-top:1.8rem;
+	font-size:1.5rem;
+	margin-top:1.8rem;
+	margin-bottom:1.2rem;
+	cursor:pointer;
+}
+.starSupport .starBox .star h3:hover{
+	color:rgb(205,127,50)
+}
+.starSupport .starBox .star p{
+	cursor:default;
+	font-size:0.9rem;
+	line-height: 1.8rem;
+	color:rgba(51,51,51,0.8);
+}
+.starSupport .starBox .star p:nth-of-type(1){
+	color:#262626;
+	font-size:1.1rem;
+}
+.starSupport .starBox .star p:nth-of-type(1) span{
+	color:#c60001;
+	font-size:1.2rem;
+	font-weight:bold;
+}
+.starSupport .starBox .star span{
+	font-size:0.9rem;
+}
+.starBox .star .hover-star{
+	position:absolute;
+	top:0;
+	left:21px;
+	background-color:rgba(0,0,0,0.5);
+	color:#fff;
+	text-align:center;
+	z-index:3;
+	display:none;
+}
+.starBox .star .hover-star img{
+	width:6.2rem;
+	height:6.2rem;
+	display:block;
+	margin:10px auto;
+	margin-top:25px;
+}
+
+
+
+
+/*暖心企业*/
+.EnterInit .slideBox{
+	height:21rem;
+	width:77.3rem;
+	margin-bottom:3.4rem
+}
+.EnterInit .CooperEnter{
+	padding-bottom:4rem;
+	margin-left:3.2rem;
+}
+.EnterInit .firmBox{
+	margin-bottom:2.7rem;
+	height:5rem;
+}
+.EnterInit .firmBox .firmLogo{
+	display:inline-block;
+	width:4.8rem;
+	height:4.8rem;
+	line-height:6.5rem;
+	border:0.2rem solid #e4e4e4;
+	border-radius:50%;
+	text-align:center;
+	float:left;
+	cursor:pointer;
+	transition:all .3s linear;
+}
+.EnterInit .firm2 .firmLogo{
+	line-height:6rem;
+}
+.EnterInit .firmBox:hover .firmLogo{
+	background-color:rgba(205,127,50,0.1);
+}
+.EnterInit .firmBox:hover p{
+	color:#c52428;
+}
+.EnterInit .firmBox p{
+	display:inline-block;
+	font-size:1.5rem;
+	color:#262626;
+	padding-left:3rem;
+	float:left;
+	line-height:5rem;
+	cursor:pointer;
+	transition:all .3s linear;
+}
+
+
+
+
+/*特别鸣谢*/
+.specialThanks .topBox{
+	margin:3.4rem auto;
+	width:30rem;
+	display:flex;
+	justify-content:space-between;
+	text-align:center;
+	font-size:1.1rem;
+	color:#262626;
+	line-height:1.8rem
+}
+.specialThanks .topBox .firmLogo{
+	cursor:pointer;
+	width:4.8rem;
+	height:4.8rem;
+	text-align:center;
+	border-radius:50%;
+	border:0.2rem solid rgba(80,80,80,0.1);
+	margin:1.5rem auto;
+}
+.specialThanks .topBox .firmLogo1 img{
+	margin-top:1.4rem;
+}
+.specialThanks .topBox .firmLogo2 img{
+	margin-top:1.9rem;
+}
+.specialThanks .bottomBox{
+	height:5.6rem;
+	width:100%;
+	position:relative;
+}
+.specialThanks .bottomBox .firmBottom{
+	width:66rem;
+	height:100%;
+	position:absolute;
+	overflow:hidden;
+	left:50%;
+	margin-left:-33rem;
+}
+.specialThanks .bottomBox .firmBottom ul{
+	width:200%;
+	position:absolute;
+	top:0;
+	left:0;
+	transition:all .8s linear;
+}
+.bottomBox .firmBottom ul li{
+	float:left;
+	text-align:center;
+	height:5rem;
+	width:5rem;
+	line-height:5rem;
+	border-radius:50%;
+	box-sizing:border-box;
+	border:0.1rem solid rgba(80,80,80,0.1);
+	margin-left:3rem;
+	background-color:#fff;
+	cursor:pointer;
+	margin-top:0.3rem;
+	transition: all .5s;
+}
+.bottomBox .firmBottom ul li:hover{
+	border:0.1rem solid rgba(80,80,80,0);
+	transform: scale(1.3, 1.3);
+}
+.specialThanks .topBox .firmLogo:hover{
+	border:0.2rem dashed rgba(255,255,255,0);
+	transform: scale(1.3, 1.3);
+    transition: all .5s;
+}
+.bottomBox .firmBottom ul li .sx{
+	padding-top:0.5rem;
+}
+.bottomBox .firmBottom ul li .sx2{
+	padding-top:1.2rem;
+}
+.specialThanks .bottomBox .toPrev{
+	background-image:url('../images/specialThanks/prev.png');	
+	left:0;
+	top:0.8rem
+}
+.specialThanks .bottomBox .toNext{
+	background-image:url('../images/specialThanks/next.png');	
+	right:0;
+	top:0.8rem;
+}
+.specialThanks .bottomBox .firmBottom ul.partA{
+	left:0;
+}
+.specialThanks .bottomBox .firmBottom ul.partB{
+	left:-64rem;
+}
+
+
+
+
+/*合作产品+*/
+.collPro{
+	width:100%;
+	margin-top:4.7rem;
+	background-color:#282828;
+	color:rgba(255,255,255,0.8);
+	position:absolute;
+	left:0;
+}
+.collPro .lovePower{
+	text-align:center;
+	width:100%;
+}
+.collPro .lovePower p{
+	color:rgba(255,255,255,0.8);
+	font-size:1.1rem;
+	padding-top:4.6rem;
+	margin-bottom:3.4rem;
+	cursor:default;
+}
+.collPro .lovePower .productBox{
+	display:flex;
+	justify-content:space-between;
+}
+.collPro .lovePower .productBox .product img{
+	height:2.3rem;
+	padding:5px;
+	border-radius:10px;
+	opacity:0.6;
+	transition: all .5s;
+}
+.collPro .lovePower .productBox .product img:hover{
+	box-shadow:0 0 10px 3px rgba(255,255,255,0.5),
+			   inset 0 0 10px 1px rgba(255,255,255,0.5);
+	opacity:1;
+	transform: scale(1.1, 1.1);
+}
+
+
+
+
+/*页脚*/
+footer{
+	margin-top:4.4rem;
+	padding-top:1.9rem;
+	text-align:center;
+	height:3.5rem;
+	background-color:rgba(0,0,0,0.1);
+	font-size:0.8rem;
+	color:rgba(255,255,255,0.4);
+	line-height:1.1rem;
+}

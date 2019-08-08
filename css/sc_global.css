@@ -1,0 +1,259 @@
+@charset "utf-8";
+
+/*字体引入*/
+@font-face{
+	font-family:'netto';
+	src:url('./font/Netto.otf'),
+		url('./font/Netto.eot'),/*IE9+*/
+		url('./font/Netto.eot?#iefix')format('embedded-opentype'),/*ie6~8*/
+		url('./font/Netto.woff')format('woff'),/*chrome\firefox*/
+		url('./font/Netto.ttf')format('truetype'),
+		url('./font/Netto.svg#fontname')format('svg');/*ios 4.1-*/
+}
+@font-face{
+	font-family:'PFSC_L';
+	src:url('./font/PingFangSC-Light.otf'),
+		url('./font/PingFangSC-Light.eot'),
+		url('./font/PingFangSC-Light.eot?#iefix')format('embedded-opentype'),
+		url('./font/PingFangSC-Light.woff')format('woff'),
+		url('./font/PingFangSC-Lightttf')format('truetype'),
+		url('./font/PingFangSC-Lightsvg#fontname')format('svg');
+}
+@font-face{
+	font-family:'PFSC_R';
+	src:url('./font/PingFangSC-Regular.otf'),
+		url('./font/PingFangSC-Light.eot'),
+		url('./font/PingFangSC-Light.eot?#iefix')format('embedded-opentype'),
+		url('./font/PingFangSC-Light.woff')format('woff'),
+		url('./font/PingFangSC-Lightttf')format('truetype'),
+		url('./font/PingFangSC-Lightsvg#fontname')format('svg');
+}
+
+
+/*CSSreset*/
+@charset "utf-8";
+body,p,em,div,span,h1,h2,h3,h4,h5,h6,pre,a,img,
+dl,dt,dd,ul,ol,li,form,label,table{padding:0;margin:0}
+h1,h2,h3,h4,h5{font-size:16px; font-weight:normal}
+a{text-decoration: none}
+ul,li{list-style:none}
+html,body{
+	width:100%;
+	font-size:16px;
+	scroll-behavior:smooth;
+	overflow-x:hidden;
+}
+
+/*中央内容尺寸限制*/
+.wrap{
+	max-width:1239px;
+	margin:0 auto;
+	padding:0 12px;
+}
+
+/*中间内容区通用*/
+article{
+	margin-top:51.3rem;
+	overflow:hidden;
+}
+article h2{
+	font-size:2.3rem;
+	padding-top:4.0rem;
+	font-weight:normal;
+	text-align:center;
+	color:#c52428;
+	cursor:default;
+}
+article h2::after{
+	display:block;
+	content:'';
+	width:8.6rem;
+	height:0.1rem;
+	background-color:#c52428;
+	margin:.6rem auto;
+	margin-bottom:3.4rem
+}
+
+/*左右跳转按钮样式*/
+.dirBtn{
+	display:inline-block;
+	width:2rem;
+	height:3rem;
+	position:absolute;
+	cursor:pointer;
+	background-position:center;
+	background-size:cover;
+	opacity:0.7;
+}
+.dirBtn:hover{
+	opacity:1;
+}
+
+/*轮播图插件样式*/
+#swiper{
+	width:100%;
+	height:100%;
+}
+
+/*浮栏*/
+.floatBoard{
+	display:none;
+	width:50px;
+	height:105px;
+	position:fixed;
+	right:0;
+	bottom: 1rem;
+	z-index:99;
+}
+.floatBoard a{
+	display:block;
+	width:50px;
+	height:50px;
+	background-color:#ccc;
+	margin-bottom:5px;
+	transition:all .2s;
+	border-radius:10px;
+}
+.floatBoard a i{
+	width:25px;
+	height:20px;
+	float:left;
+    margin-top: 16px;
+    background-image:url(../images/touch.png);
+}
+.floatBoard a.ewm i{
+	margin-left: 16px;
+	background-position:0 -25px;
+}
+.floatBoard a.toTop i{
+	background-position:-25px -25px;
+	margin-left: 11px;
+}
+.floatBoard a:hover{
+	background-color:#c52428
+}
+.floatBoard .ewmBox{
+	display:none;
+	position:absolute;
+	width:105px;
+	height:105px;
+	border-radius:10px;
+	background-color:#c52428;
+	left:-110px;
+	top:0;
+}
+.floatBoard .ewmBox img{
+	width:75px;
+	height:75px;
+	margin-top:15px;
+	margin-left:15px;
+}
+
+/*登录*/
+.signIn{
+	position:fixed;
+	left:0;
+	top:0;
+	width:100%;
+	height:100%;
+	background-color:rgba(0,0,0,0.9);
+	z-index:200;
+}
+.signIn .signInBox{
+	width:300px;
+	height:360px;
+	background-color:#fff;
+	position:absolute;
+	left:50%;
+	top:50%;
+	margin-left:-150px;
+	margin-top:-180px;
+	box-sizing:border-box;
+	padding:38px 12px 12px 12px;
+}
+.signIn .signInBox p{
+	text-align:center;
+	color:#666;
+	cursor:default;
+}
+.signIn .signInBox p:nth-of-type(1){
+	font-size:18px;
+	margin-bottom:23px;
+	color:#333;
+}
+.signIn .signInBox p:nth-of-type(2){
+	font-size:16px;
+	margin-bottom:47px;
+}
+.signIn .signInBox p:nth-of-type(3){
+	font-size:12px;
+	margin-top:12px;
+}
+.signIn .signInBox .tx{
+	width:82px;
+	height:82px;
+	box-sizing:border-box;
+	padding:2px;
+	margin:0 auto;
+	border:1px solid #e3e3e3;
+	overflow:hidden;
+	box-shadow:0 0 2px 1px #d5d5d5;
+	cursor:pointer;
+}
+.signIn .signInBox .tx:hover{
+	box-shadow:0 0 2px 1px skyblue;
+}
+.signIn .signInBox .tx img{
+	width:100%;
+}
+.signIn .signInBox .brBox{
+	position:absolute;
+	font-size:10px;
+	right:11px;
+	bottom: 12px;
+	font-size:12px;
+	color:#666;
+}
+.signInBox .brBox span{
+	display:inline-block;
+	margin:0 5px;
+	cursor:pointer;
+}
+.signInBox .brBox span:hover{
+	color:red;
+}
+.signInBox .brBox span+span{
+	border-left:1px solid #666;
+	padding-left:10px;
+}
+.signIn .signInBox .wait,
+.signIn .signInBox .error{
+	display:none;
+	font-size:16px;
+	padding:10px;
+	border-radius:8px;
+	position:absolute;
+	left:50%;
+	top:50%;
+	background-color:rgba(0,0,0,0.9);
+	color:#fff;
+	transform:translate(-50%, -50%);
+}
+
+.signIn .signInBox .wait span{
+	display:inline-block;
+	height:1em;
+	line-height:1;
+	text-align:left;
+	overflow:hidden;
+}
+.signIn .signInBox .wait span::before{
+	display:block;
+	content:'...\A..\A.';
+	white-space:pre-wrap;
+	animation:waiting 1.3s infinite step-start both;
+}
+@keyframes waiting{
+	33%{transform:translateY(-2em);}
+	66%{transform:translateY(-1em);}
+}
